@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:udhaar_kab_dega/app/app.dart';
 import 'package:udhaar_kab_dega/constants/common.dart';
+import 'package:udhaar_kab_dega/theme/theme_manager.dart';
 import 'package:udhaar_kab_dega/views/components/buttons.dart';
 import 'package:udhaar_kab_dega/views/components/text_field_with_label.dart';
 

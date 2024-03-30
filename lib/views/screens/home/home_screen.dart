@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:udhaar_kab_dega/app/app.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:udhaar_kab_dega/constants/common.dart';
 import 'package:udhaar_kab_dega/gen/assets.gen.dart';
+import 'package:udhaar_kab_dega/theme/theme_manager.dart';
 import 'package:udhaar_kab_dega/views/components/buttons.dart';
+import 'package:udhaar_kab_dega/views/screens/auth/bloc/auth_bloc.dart';
 import 'package:udhaar_kab_dega/views/screens/expense/add_expense.dart';
 import 'package:udhaar_kab_dega/views/screens/friends/add_friend_screen.dart';
 import 'package:udhaar_kab_dega/views/screens/groups/create_group_screen.dart';
+import 'package:udhaar_kab_dega/views/screens/setting/setting_screen.dart';
 
 class MyHomeScreen extends StatelessWidget {
   const MyHomeScreen({super.key});
@@ -20,34 +23,41 @@ class MyHomeScreen extends StatelessWidget {
           style: context.appBarTextStyle(),
         ),
         actions: [
-          CircleAvatar(
-            backgroundColor: Colors.white,
-            child: Stack(
-              children: [
-                Center(
-                  child: Text(
-                    'P',
-                    style: TextStyle(
-                      color: Theme.of(context).scaffoldBackgroundColor,
-                      fontSize: 24,
-                      fontWeight: FontWeight.w900,
+          InkWell(
+            onTap: () {
+              context.push(const MySettingScreen());
+            },
+            child: CircleAvatar(
+              backgroundColor: Colors.white,
+              radius: 16,
+              child: Stack(
+                children: [
+                  Center(
+                    child: Text(
+                      'P',
+                      style: TextStyle(
+                        color: Theme.of(context).scaffoldBackgroundColor,
+                        fontSize: 24,
+                        fontWeight: FontWeight.w900,
+                      ),
                     ),
                   ),
-                ),
-                Align(
-                  alignment: Alignment.bottomRight,
-                  child: Assets.svg.setting.svg(
-                    width: 17,
+                  Align(
+                    alignment: Alignment.bottomRight,
+                    child: Assets.svg.setting.svg(
+                      width: 12,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           horizontalMargin16,
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => showBottomSheet(context),
+        onPressed: () => context.read<AuthBloc>().add(SignOut()),
+        // onPressed: () => showBottomSheet(context),
         child: const Icon(Icons.add),
       ),
     );

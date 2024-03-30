@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>912178167782-sovce03uvec80b0bsm22ikp1la07qsq3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.912178167782-sovce03uvec80b0bsm22ikp1la07qsq3</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>912178167782-pkdfaa36u90qihr298s4elcggka9777e.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCG4E8-sTCk4VQsILe79Myyli_RgZ2N6f0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>912178167782</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.udhaarKabDega</string>
+	<key>PROJECT_ID</key>
+	<string>udhaar-kab-dega</string>
+	<key>STORAGE_BUCKET</key>
+	<string>udhaar-kab-dega.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:912178167782:ios:d80c3f84c1d82b1f7b2027</string>
+</dict>
+</plist>

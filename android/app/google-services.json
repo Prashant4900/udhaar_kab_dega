@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "912178167782",
+    "project_id": "udhaar-kab-dega",
+    "storage_bucket": "udhaar-kab-dega.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912178167782:android:dd5dd90638c6d9267b2027",
+        "android_client_info": {
+          "package_name": "com.example.udhaar_kab_dega"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "912178167782-7frbq52imfflkokitggkn6mi6eqdu5ic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7IYVKokk42KkBJLkFFImqNECmqeZGRoY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "912178167782-7frbq52imfflkokitggkn6mi6eqdu5ic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

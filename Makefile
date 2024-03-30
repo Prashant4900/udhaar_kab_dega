@@ -39,9 +39,13 @@ splash:
 adb:
 	adb tcpip 5555
 	sleep 1
-	adb connect 192.0.0.2
+	adb connect 192.168.29.86
 
 .PHONY: env
 env:
 	make get
 	dart run env_reader --input=".env" --key="TodayNews" --output="assets/env/" --model="lib/gen/env_model.dart" --null-safety
+
+.PHONY: web-run
+web-run: 
+	flutter run -d web-server --web-port 8080 --web-hostname 0.0.0.0

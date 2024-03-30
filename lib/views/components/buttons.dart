@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:udhaar_kab_dega/app/app.dart';
+import 'package:udhaar_kab_dega/theme/theme_manager.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({

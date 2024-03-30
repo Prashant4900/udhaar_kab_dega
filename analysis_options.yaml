@@ -7,4 +7,5 @@ linter:
 analyzer:
   exclude:
     - lib/gen/
+    - lib/firebase_options.dart
     - packages/
